@@ -392,7 +392,7 @@ function App() {
           Download my resume to see my skills, projects.
         </p>
         <a
-          href="../public/Puspita Banik_resume.pdf"
+          href="/Puspita Banik_resume.pdf"
           download
           className="px-6 py-3 bg-teal-500 text-black font-semibold rounded-full shadow-lg hover:bg-teal-400 transition inline-flex items-center gap-2"
         >
