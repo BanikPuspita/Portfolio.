@@ -25,6 +25,7 @@ function Navbar() {
           <a href="#skills" className="hover:text-teal-400 transition">
             Skills
           </a>
+          <a href="#education" className="hover:text-teal-400 transition">Education</a>
           <a href="#resume" className="hover:text-teal-400 transition">
             Resume
           </a>
@@ -72,6 +73,7 @@ function Navbar() {
           >
             Skills
           </a>
+           <a href="#education" className="block hover:text-teal-400 transition" onClick={() => setIsOpen(false)}>Education</a>
           <a
             href="#resume"
             className="block hover:text-teal-400 transition"
@@ -327,6 +329,59 @@ function App() {
         </div>
       </section>
 
+      {/* education section */}
+      {/* Education Timeline Section */}
+<section id="education" className="py-20 px-6 md:px-20 bg-gray-800">
+  <motion.h2
+    initial={{ opacity: 0, y: -20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    className="text-3xl font-bold text-center mb-12 text-teal-400"
+  >
+    Education
+  </motion.h2>
+
+  <div className="relative max-w-3xl mx-auto">
+    {/* Vertical line */}
+    <div className="absolute left-4 top-0 h-full w-1 bg-teal-500"></div>
+
+    {/* B.Sc. */}
+    <div className="relative pl-12 mb-12">
+      <span className="absolute left-0 top-1 w-8 h-8 bg-teal-500 rounded-full border-4 border-gray-800"></span>
+      <h3 className="text-xl font-semibold text-teal-400">
+        Bachelor of Science in Computer Science & Engineering (CSE)
+      </h3>
+      <p className="text-gray-300">
+        Bangladesh Army International University of Science & Technology, BAIUST, Bangladesh | 2022 – Present <br /> CGPA: 3.83 / 4.00
+      </p>
+    </div>
+
+    {/* HSC */}
+    <div className="relative pl-12 mb-12">
+      <span className="absolute left-0 top-1 w-8 h-8 bg-teal-500 rounded-full border-4 border-gray-800"></span>
+      <h3 className="text-xl font-semibold text-teal-400">
+        Higher Secondary Certificate (H.S.C.)
+      </h3>
+      <p className="text-gray-300">
+        Cumilla Govt Women's College | 2018 – 2020 <br /> GPA: 5.00 / 5.00
+      </p>
+    </div>
+
+    {/* SSC */}
+    <div className="relative pl-12">
+      <span className="absolute left-0 top-1 w-8 h-8 bg-teal-500 rounded-full border-4 border-gray-800"></span>
+      <h3 className="text-xl font-semibold text-teal-400">
+        Secondary School Certificate (S.S.C.)
+      </h3>
+      <p className="text-gray-300">
+        Our Lady Of Fatima Girls' High School, Bangladesh | 2018 <br /> GPA: 5.00 / 5.00
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
       {/* Resume Section */}
       <section
         id="resume"
@@ -337,7 +392,7 @@ function App() {
           Download my resume to see my skills, projects.
         </p>
         <a
-          href="../public/Puspita Banik_resume .pdf"
+          href="../public/Puspita Banik_resume.pdf"
           download
           className="px-6 py-3 bg-teal-500 text-black font-semibold rounded-full shadow-lg hover:bg-teal-400 transition inline-flex items-center gap-2"
         >
